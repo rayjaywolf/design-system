@@ -1,95 +1,417 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+import CustomButton from "./components/Button";
+import { WarningButton } from "./components/Button";
+import { SuccessButton } from "./components/Button";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px",
+        flexWrap: "wrap",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          gap: "10px",
+          flexWrap: "wrap",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <CustomButton variant="primary" size="xs">
+            Button
+          </CustomButton>
+          <CustomButton variant="primary" size="sm">
+            Button
+          </CustomButton>
+          <CustomButton variant="primary" size="md">
+            Button
+          </CustomButton>
+          <CustomButton variant="primary" size="lg">
+            Button
+          </CustomButton>
+          <CustomButton variant="primary" size="xl">
+            Button
+          </CustomButton>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <CustomButton variant="secondary" size="xs">
+            Button
+          </CustomButton>
+          <CustomButton variant="secondary" size="sm">
+            Button
+          </CustomButton>
+          <CustomButton variant="secondary" size="md">
+            Button
+          </CustomButton>
+          <CustomButton variant="secondary" size="lg">
+            Button
+          </CustomButton>
+          <CustomButton variant="secondary" size="xl">
+            Button
+          </CustomButton>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <CustomButton variant="primary-light" size="xs">
+            Button
+          </CustomButton>
+          <CustomButton variant="primary-light" size="sm">
+            Button
+          </CustomButton>
+          <CustomButton variant="primary-light" size="md">
+            Button
+          </CustomButton>
+          <CustomButton variant="primary-light" size="lg">
+            Button
+          </CustomButton>
+          <CustomButton variant="primary-light" size="xl">
+            Button
+          </CustomButton>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <CustomButton variant="tertiary" size="xs">
+            Button
+          </CustomButton>
+          <CustomButton variant="tertiary" size="sm">
+            Button
+          </CustomButton>
+          <CustomButton variant="tertiary" size="md">
+            Button
+          </CustomButton>
+          <CustomButton variant="tertiary" size="lg">
+            Button
+          </CustomButton>
+          <CustomButton variant="tertiary" size="xl">
+            Button
+          </CustomButton>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <CustomButton variant="quaternary" size="xs">
+            Button
+          </CustomButton>
+          <CustomButton variant="quaternary" size="sm">
+            Button
+          </CustomButton>
+          <CustomButton variant="quaternary" size="md">
+            Button
+          </CustomButton>
+          <CustomButton variant="quaternary" size="lg">
+            Button
+          </CustomButton>
+          <CustomButton variant="quaternary" size="xl">
+            Button
+          </CustomButton>
+        </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          gap: "10px",
+          flexWrap: "wrap",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <WarningButton variant="primary" size="xs">
+            Button
+          </WarningButton>
+          <WarningButton variant="primary" size="sm">
+            Button
+          </WarningButton>
+          <WarningButton variant="primary" size="md">
+            Button
+          </WarningButton>
+          <WarningButton variant="primary" size="lg">
+            Button
+          </WarningButton>
+          <WarningButton variant="primary" size="xl">
+            Button
+          </WarningButton>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <WarningButton variant="secondary" size="xs">
+            Button
+          </WarningButton>
+          <WarningButton variant="secondary" size="sm">
+            Button
+          </WarningButton>
+          <WarningButton variant="secondary" size="md">
+            Button
+          </WarningButton>
+          <WarningButton variant="secondary" size="lg">
+            Button
+          </WarningButton>
+          <WarningButton variant="secondary" size="xl">
+            Button
+          </WarningButton>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <WarningButton variant="primary-light" size="xs">
+            Button
+          </WarningButton>
+          <WarningButton variant="primary-light" size="sm">
+            Button
+          </WarningButton>
+          <WarningButton variant="primary-light" size="md">
+            Button
+          </WarningButton>
+          <WarningButton variant="primary-light" size="lg">
+            Button
+          </WarningButton>
+          <WarningButton variant="primary-light" size="xl">
+            Button
+          </WarningButton>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <WarningButton variant="tertiary" size="xs">
+            Button
+          </WarningButton>
+          <WarningButton variant="tertiary" size="sm">
+            Button
+          </WarningButton>
+          <WarningButton variant="tertiary" size="md">
+            Button
+          </WarningButton>
+          <WarningButton variant="tertiary" size="lg">
+            Button
+          </WarningButton>
+          <WarningButton variant="tertiary" size="xl">
+            Button
+          </WarningButton>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <WarningButton variant="quaternary" size="xs">
+            Button
+          </WarningButton>
+          <WarningButton variant="quaternary" size="sm">
+            Button
+          </WarningButton>
+          <WarningButton variant="quaternary" size="md">
+            Button
+          </WarningButton>
+          <WarningButton variant="quaternary" size="lg">
+            Button
+          </WarningButton>
+          <WarningButton variant="quaternary" size="xl">
+            Button
+          </WarningButton>
+        </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          gap: "10px",
+          flexWrap: "wrap",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <SuccessButton variant="primary" size="xs">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="primary" size="sm">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="primary" size="md">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="primary" size="lg">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="primary" size="xl">
+            Button
+          </SuccessButton>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <SuccessButton variant="secondary" size="xs">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="secondary" size="sm">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="secondary" size="md">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="secondary" size="lg">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="secondary" size="xl">
+            Button
+          </SuccessButton>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <SuccessButton variant="primary-light" size="xs">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="primary-light" size="sm">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="primary-light" size="md">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="primary-light" size="lg">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="primary-light" size="xl">
+            Button
+          </SuccessButton>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <SuccessButton variant="tertiary" size="xs">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="tertiary" size="sm">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="tertiary" size="md">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="tertiary" size="lg">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="tertiary" size="xl">
+            Button
+          </SuccessButton>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            gap: "10px",
+            flexWrap: "wrap",
+            flexDirection: "column",
+            padding: "25px",
+          }}
+        >
+          <SuccessButton variant="quaternary" size="xs">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="quaternary" size="sm">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="quaternary" size="md">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="quaternary" size="lg">
+            Button
+          </SuccessButton>
+          <SuccessButton variant="quaternary" size="xl">
+            Button
+          </SuccessButton>
+        </div>
+      </div>
     </div>
   );
 }

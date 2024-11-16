@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("/fonts/open-sauce.two-regular.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("/fonts/open-sauce.two-medium.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("/fonts/open-sauce.two-semibold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("/fonts/open-sauce.two-bold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("/fonts/open-sauce.two-extrabold.ttf") format("truetype");
+  font-weight: 900;
+}
+
+:root {
+  // Primary Colors
+  --primary-50: #f4f3ff;
+  --primary-100: #eae8ff;
+  --primary-200: #d7d5ff;
+  --primary-300: #bbb3ff;
+  --primary-400: #8d7aff;
+  --primary-500: #7b5cfa;
+  --primary-600: #6635f2;
+  --primary-700: #5824dd;
+  --primary-800: #491dba;
+  --primary-900: #3d1a98;
+  --primary-950: #19045d;
+
+  // Secondary Colors
+  --secondary-50: #fff3fd;
+  --secondary-100: #ffe6fd;
+  --secondary-200: #ffccfa;
+  --secondary-300: #ffa3f2;
+  --secondary-400: #ff8de9;
+  --secondary-500: #ff2ee7;
+  --secondary-600: #e316c7;
+  --secondary-700: #bd0ea2;
+  --secondary-800: #9a0e83;
+  --secondary-900: #7e1169;
+  --secondary-950: #4b003b;
+
+  // Functional Colors
+  --info-50: #f1f8fe;
+  --info-100: #deeefd;
+  --info-200: #bcf1fa;
+  --info-300: #92cbf7;
+  --info-400: #69b0f3;
+  --info-500: #1188eb;
+  --info-600: #1080d6;
+  --info-700: #0e6fbf;
+  --info-800: #0b5898;
+  --info-900: #08416d;
+  --info-950: #001d38;
+
+  --success-50: #e8f8e5;
+  --success-100: #d4f7cf;
+  --success-200: #a9ef9f;
+  --success-300: #7fe76f;
+  --success-400: #50df3a;
+  --success-500: #35c220;
+  --success-600: #2a9919;
+  --success-700: #217612;
+  --success-800: #164f0d;
+  --success-900: #0d3107;
+  --success-950: #082005;
+
+  --danger-50: #feeeec;
+  --danger-100: #fcd9d9;
+  --danger-200: #f9b8b3;
+  --danger-300: #f68889;
+  --danger-400: #f38663;
+  --danger-500: #f3033d;
+  --danger-600: #e92020;
+  --danger-700: #a60d0d;
+  --danger-800: #720909;
+  --danger-900: #4a0606;
+  --danger-950: #240000;
+
+  --warning-50: #fff8e6;
+  --warning-100: #fef2cd;
+  --warning-200: #fee89a;
+  --warning-300: #fddb68;
+  --warning-400: #fdcb35;
+  --warning-500: #fcbf04;
+  --warning-600: #caa802;
+  --warning-700: #8a6501;
+  --warning-800: #654c01;
+  --warning-900: #4a3902;
+  --warning-950: #2d2000;
+
+  // Gray Colors
+  --gray-50: #f9f9fa;
+  --gray-100: #f4f4f6;
+  --gray-200: #ebecf0;
+  --gray-300: #dde0e4;
+  --gray-400: #c3c6cc;
+  --gray-500: #afb3bb;
+  --gray-600: #8c929c;
+  --gray-700: #5e616d;
+  --gray-800: #414651;
+  --gray-900: #222732;
+  --gray-950: #0a0c11;
+
+  // Dark Colors
+  --dark-50: #f8f8f8;
+  --dark-100: #f4f4f4;
+  --dark-200: #eeeeee;
+  --dark-300: #e1e1e1;
+  --dark-400: #c7c7c7;
+  --dark-500: #7d7d7d;
+  --dark-600: #2c2c2c;
+  --dark-700: #202020;
+  --dark-800: #141414;
+  --dark-900: #111111;
+  --dark-950: #070707;
+
+  // Black Neutrals
+  --neutral-black-48: #0000007a;
+  --neutral-black-56: #0000008f;
+  --neutral-black-64: #000000a3;
+  --neutral-black-72: #000000b8;
+  --neutral-black-88: #000000e0;
+  --neutral-black-100: #000000;
+
+  // White Neutrals
+  --neutral-white-4: #ffffff0a;
+  --neutral-white-7: #ffffff12;
+  --neutral-white-12: #ffffff1f;
+  --neutral-white-16: #ffffff29;
+  --neutral-white-24: #ffffff3d;
+  --neutral-white-32: #ffffff52;
+  --neutral-white-48: #ffffff7a;
+  --neutral-white-56: #ffffff8f;
+  --neutral-white-64: #ffffffa3;
+  --neutral-white-72: #ffffffb8;
+  --neutral-white-88: #ffffffe0;
+  --neutral-white-100: #ffffff;
+}
